@@ -9,7 +9,8 @@ def main():
         # 1. Handle Argument Logic
         if len(sys.argv) < 2:
             try:
-                text = input("What is the text to count?\n")
+                print("What is the text to count?")
+                text = sys.stdin.readline()
             except EOFError:
                 return
         elif len(sys.argv) > 2:
