@@ -24,8 +24,8 @@ def main():
 
         # 2. Filter Logic - split into words and filter by length
         words = text.split()
-        filtered_words = list(
-            ft_filter(lambda word: len(word) > length_limit, words))
+        list_iterator = ft_filter(lambda w: len(w) > length_limit, words)
+        filtered_words = [word for word in list_iterator]
         print(filtered_words)
 
     except AssertionError as msg:
