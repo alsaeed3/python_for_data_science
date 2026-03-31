@@ -1,3 +1,4 @@
+"""Module for counting character types in a string."""
 import sys
 
 
